@@ -1,0 +1,94 @@
+
+<section class="flex p-10">
+
+  <div class="bg-blue-900 w-full h-auto m-5 px-3 pt-3 rounded-3xl shadow border-white border-4">
+    <h3 class="text-xl text-white uppercase">Bombo {{bombos.bombo1.numero}}</h3>
+
+    <hr>
+
+    <ul class="my-4">
+      @for ( bombo of bombos.bombo1.equipos; track $index) {
+
+        <div class="flex items-center m-3">
+          <img width="35px" class="me-1 h-9"
+          srcset="
+          {{bombo.img}}
+          ">
+
+          <li class="text-white ms-1 text-sm">
+            {{bombo.name}}
+          </li>
+        </div>
+      }
+    </ul>
+
+  </div>
+
+  <div class="bg-blue-900 w-full h-auto m-5 px-3 pt-3 rounded-3xl shadow border-white border-4">
+    <h3 class="text-xl text-white uppercase">Bombo {{bombos.bombo2.numero}}</h3>
+
+    <hr>
+
+    <ul class="my-4">
+      @for ( bombo of bombos.bombo2.equipos; track $index) {
+
+        <div class="flex items-center m-3">
+          <img width="35px" class="me-1 h-9"
+          srcset="
+          {{bombo.img}}
+          ">
+
+          <li class="text-white ms-1 text-sm">
+            {{bombo.name}}
+          </li>
+        </div>
+      }
+    </ul>
+  </div>
+
+  <div class="bg-blue-900 w-full h-auto m-5 px-3 pt-3 rounded-3xl shadow border-white border-4">
+
+    <h3 class="text-xl text-white uppercase">Bombo {{bombos.bombo3.numero}}</h3>
+
+    <hr>
+
+    <ul class="my-4">
+      @for ( bombo of bombos.bombo3.equipos; track $index) {
+
+        <div class="flex items-center m-3">
+          <img width="35px" class="me-1 h-9"
+          srcset="
+          {{bombo.img}}
+          ">
+
+          <li class="text-white ms-1 text-sm">
+            {{bombo.name}}
+          </li>
+        </div>
+      }
+    </ul>
+  </div>
+
+  <div class="bg-blue-900 w-full h-auto m-5 px-3 pt-3 rounded-3xl shadow border-white border-4">
+    <h3 class="text-xl text-white uppercase">Bombo {{bombos.bombo4.numero}}</h3>
+
+    <hr>
+
+    <ul class="my-4">
+      @for ( bombo of bombos.bombo4.equipos; track $index) {
+
+        <div class="flex items-center m-3">
+          <img width="35px" class="me-1 h-9"
+          srcset="
+          {{bombo.img}}
+          ">
+
+          <li class="text-white ms-1 text-sm">
+            {{bombo.name}}
+          </li>
+        </div>
+      }
+    </ul>
+  </div>
+
+</section>

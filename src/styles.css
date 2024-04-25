@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body{
+  background-color: rgb(21, 50, 180);
+}
+
+*{
+  color: white;
+}
+
+.bg-home{
+  width: 100%;
+}
+
+.logo{
+  height: 60px;
+  transition: all 0.2s;
+}
+
+.logo:hover{
+  width: 2rem;
+}

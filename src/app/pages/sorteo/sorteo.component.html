@@ -1,0 +1,62 @@
+
+<section>
+
+  <div class="flex flex-col items-center justify-center">
+
+    <div class="grid grid-cols-4 mt-10">
+
+      <div class="mx-8 text-center">
+
+        <button (click)="sEquipo(1)" class="bg-blue-500 hover:bg-blue-700 text-sm font-bold py-1 px-3 rounded mb-4">SACAR EQUIPO</button>
+
+        <div class="bg-black border p-5 text-center mb-2">
+          {{bombo1.length}} equipos
+        </div>
+        <span>BOMBO 1</span>
+      </div>
+
+      <div class="mx-8 text-center">
+        <button (click)="sEquipo(2)" class="bg-blue-500 hover:bg-blue-700 text-sm font-bold py-1 px-3 rounded mb-4">SACAR EQUIPO</button>
+
+        <div class="bg-black border p-5 text-center mb-2">
+          {{bombo2.length}} equipos
+        </div>
+        <span>BOMBO 2</span>
+      </div>
+
+      <div class="mx-8 text-center">
+        <button (click)="sEquipo(3)" class="bg-blue-500 hover:bg-blue-700 text-sm font-bold py-1 px-3 rounded mb-4">SACAR EQUIPO</button>
+
+        <div class="bg-black border p-5 text-center mb-2">
+          {{bombo3.length}} equipos
+        </div>
+        <span>BOMBO 3</span>
+      </div>
+
+      <div class="mx-8 text-center">
+        <button (click)="sEquipo(4)" class="bg-blue-500 hover:bg-blue-700 text-sm font-bold py-1 px-3 rounded mb-4">SACAR EQUIPO</button>
+
+        <div class="bg-black border p-5 text-center mb-2">
+          {{bombo4.length}} equipos
+        </div>
+        <span>BOMBO 4</span>
+      </div>
+    </div>
+
+    <div class="flex justify-center w-9/12 text-xl mt-5">
+      <span><b>NOTA:</b> Aquí tienes 4 bowls con los equipos de cada bombo, tienes que agarran una bola de cada bowl y el equipo que salga se pondra en el grupo que toque.</span>
+    </div>
+  </div>
+
+  <app-f-grupos></app-f-grupos>
+
+  <div class="flex justify-center">
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-md font-bold py-1 px-3 rounded mb-10 mt-6"
+      [routerLink]="['/dashboard/partidos']"
+    >
+      EMPEZAR PARTIDOS
+    </button>
+  </div>
+
+</section>
