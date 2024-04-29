@@ -17,3 +17,15 @@ export interface Equipo {
   img:    string;
   league: string;
 }
+
+export interface fasesGrupos {
+  grupof1: Equipo[];
+  grupof2: Equipo[];
+  grupof3: Equipo[];
+  grupof4: Equipo[];
+  grupof5: Equipo[];
+  grupof6: Equipo[];
+  grupof7: Equipo[];
+  grupof8: Equipo[];
+}
+

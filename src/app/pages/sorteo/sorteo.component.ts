@@ -26,12 +26,8 @@ export class SorteoComponent implements OnInit {
 
   ngOnInit(): void {
     this.getBombos()
-
     this.equiposBombo = this.scS.getBombos()
-
   }
-
-
 
   public get bombo1() : Equipo[] {
     return this.scS.bombo1;

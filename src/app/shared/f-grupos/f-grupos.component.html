@@ -1,20 +1,70 @@
+
+@if (grupos.length > 0) {
+  <h1 class="text-center my-5">{{equipoSacado.name}}</h1>
+  <div class="flex justify-center">
+    <div class="mx-8 text-center w-40">
+      <button
+      (click)="gRandom()"
+      class="bg-blue-500 hover:bg-blue-700 text-sm font-bold py-1 px-3 rounded mb-4">SACAR LETRA</button>
+      <div class="bg-black border p-5 text-center mb-2">
+        {{grupos}}
+      </div>
+    </div>
+
+  </div>
+  }
+
+@if (letraGrupo()) {
+<div class="flex justify-center">
+  <div class="mx-8 text-center w-40">
+
+    <h1 class="text-center my-5">El {{equipoSacado.name}} va para el grupo {{letraGrupo()}}</h1>
+
+    <div class="bg-black border p-5 text-center mb-2">
+      <h1>{{letraGrupo()}}</h1>
+
+    </div>
+  </div>
+</div>
+}
+
+@if (equipoBombo) {
+
+  <div class="flex flex-col justify-center mx-36 p-10 my-10 bg-blue-950">
+
+  <span class="text-center text-lg">{{equipoBombo.name}} vuelve a su {{bomboDestino}}.</span>
+
+  <span class="text-center text-lg mt-5">Así {{equipoSacado.name}} entra en una fase de grupos donde no habrá partidos de ligas iguales.</span>
+
+  </div>
+}
+
+
+@if (mismaLeague) {
+
+  <div class="text-center mx-32 my-10 bg-blue-950 border border-white p-10">
+
+    <h3 class="text-center text-lg">El equipo no puede estar en el siguiente grupo porque son del mismo país.</h3>
+
+    <p class="mt-5 text-center text-lg">Se hará otro sorteo con los grupos en que puede entrar por su liga y se intercambiarán los equipos (El que sale en este sorteo con el de la segunda fila del grupo de la letra que salga)</p>
+  </div>
+}
+
 <div class="justify-center grid grid-cols-4">
 
   <table class="border border-white m-10">
 
     <thead>
-
       <tr class="border border-white tablehead">
         <span class="my-10 text-2xl">
           Group A
         </span>
       </tr>
-
     </thead>
 
     <tbody>
       <tr>
-          @for (equipo of fGrupo1 ; track $index) {
+          @for (equipo of fasesGrupos.grupof1 ; track $index) {
             <td class="border border-white border-t-0 py-2 px-4 flex items-center">
             <img src="{{equipo.img}}" alt="{{equipo.name}}" width="30px">
               <span class="ms-2">
@@ -22,15 +72,11 @@
               </span>
             </td>
           }
-
-
      </tr>
     </tbody>
-
   </table>
 
   <table class="border border-white m-10">
-
     <thead>
       <tr class="border border-white tablehead">
         <span class="my-10 text-2xl">
@@ -41,35 +87,7 @@
     </thead>
     <tbody>
       <tr>
-
-          @for (equipo of fGrupo2 ; track $index) {
-            <td class="border border-white border-t-0 py-2 px-4 flex items-center">
-            <img src="{{equipo.img}}" src="" alt="" width="30px">
-              <span class="ms-2">
-                {{equipo.name}}
-              </span>
-            </td>
-          }
-
-      </tr>
-    </tbody>
-  </table>
-
-  <table class="border border-white m-10">
-
-    <thead>
-
-      <tr class="border border-white tablehead">
-        <span class="my-10 text-2xl">
-          Group C
-        </span>
-      </tr>
-
-    </thead>
-
-    <tbody>
-      <tr>
-        @for (equipo of fGrupo3; track $index) {
+        @for (equipo of fasesGrupos.grupof2 ; track $index) {
           <td class="border border-white border-t-0 py-2 px-4 flex items-center">
           <img src="{{equipo.img}}" src="" alt="" width="30px">
             <span class="ms-2">
@@ -77,16 +95,36 @@
             </span>
           </td>
         }
+      </tr>
+    </tbody>
+  </table>
 
+  <table class="border border-white m-10">
+    <thead>
+      <tr class="border border-white tablehead">
+        <span class="my-10 text-2xl">
+          Group C
+        </span>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        @for (equipo of fasesGrupos.grupof3; track $index) {
+          <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img src="{{equipo.img}}" src="" alt="" width="30px">
+            <span class="ms-2">
+              {{equipo.name}}
+            </span>
+          </td>
+        }
     </tr>
   </tbody>
 
   </table>
 
   <table class="border border-white m-10">
-
     <thead>
-
       <tr class="border border-white tablehead">
         <span class="my-10 text-2xl">
           Group D
@@ -94,10 +132,9 @@
       </tr>
 
     </thead>
-
     <tbody>
       <tr>
-        @for (equipo of fGrupo4 ; track $index) {
+        @for (equipo of fasesGrupos.grupof4 ; track $index) {
           <td class="border border-white border-t-0 py-2 px-4 flex items-center">
           <img src="{{equipo.img}}" src="" alt="" width="30px">
             <span class="ms-2">
@@ -107,25 +144,21 @@
         }
      </tr>
     </tbody>
-
   </table>
 
   <table class="border border-white m-10">
-
     <thead>
-
       <tr class="border border-white tablehead">
         <span class="my-10 text-2xl">
           Group E
         </span>
       </tr>
-
     </thead>
 
     <tbody>
       <tr>
 
-        @for (equipo of fGrupo5  ; track $index) {
+        @for (equipo of fasesGrupos.grupof5  ; track $index) {
           <td class="border border-white border-t-0 py-2 px-4 flex items-center">
           <img src="{{equipo.img}}" src="" alt="" width="30px">
             <span class="ms-2">
@@ -133,28 +166,22 @@
             </span>
           </td>
         }
-
       </tr>
     </tbody>
 
   </table>
 
   <table class="border border-white m-10">
-
     <thead>
-
       <tr class="border border-white tablehead">
         <span class="my-10 text-2xl">
           Group F
         </span>
       </tr>
-
     </thead>
-
     <tbody>
       <tr>
-
-        @for (equipo of fGrupo6 ; track $index) {
+        @for (equipo of fasesGrupos.grupof6 ; track $index) {
           <td class="border border-white border-t-0 py-2 px-4 flex items-center">
           <img src="{{equipo.img}}" src="" alt="" width="30px">
             <span class="ms-2">
@@ -162,29 +189,22 @@
             </span>
           </td>
         }
-
       </tr>
     </tbody>
-
   </table>
 
   <table class="border border-white m-10">
-
     <thead>
-
       <tr class="border border-white tablehead">
         <span class="my-10 text-2xl">
           Group G
         </span>
       </tr>
-
     </thead>
 
     <tbody>
       <tr>
-
-
-        @for (equipo of fGrupo7 ; track $index) {
+        @for (equipo of fasesGrupos.grupof7 ; track $index) {
           <td class="border border-white border-t-0 py-2 px-4 flex items-center">
           <img src="{{equipo.img}}" src="" alt="" width="30px">
             <span class="ms-2">
@@ -192,30 +212,23 @@
             </span>
           </td>
        }
-
-
-
       </tr>
     </tbody>
 
   </table>
-
   <table class="border border-white m-10">
 
     <thead>
-
       <tr class="border border-white tablehead">
         <span class="my-10 text-2xl">
           Group H
         </span>
       </tr>
-
     </thead>
 
     <tbody>
       <tr>
-
-        @for (equipo of fGrupo8 ; track $index) {
+        @for (equipo of fasesGrupos.grupof8 ; track $index) {
           <td class="border border-white border-t-0 py-2 px-4 flex items-center">
           <img src="{{equipo.img}}" src="" alt="" width="30px">
             <span class="ms-2">
@@ -223,12 +236,8 @@
             </span>
           </td>
         }
-
-
       </tr>
     </tbody>
-
   </table>
 
 </div>
-

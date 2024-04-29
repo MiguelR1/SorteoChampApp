@@ -1,0 +1,218 @@
+{
+  "bombo1": {
+    "numero": 1,
+    "equipos": [
+      {
+        "id": "1",
+        "name":"MANCHESTER CITY",
+        "img": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/66.png",
+        "league": "premier"
+      },
+      {
+        "id": "1",
+        "name": "SEVILLA",
+        "img": "https://www.estadiodeportivo.com/img/equipos/futbol/portadilla/sevilla-futbol-club.png",
+        "league": "laliga"
+      },
+      {
+        "id": "1",
+        "name": "BAYERN",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg/512px-FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg.png",
+        "league": "bundesliga"
+      },
+      {
+        "id": "1",
+        "name": "PSG",
+        "img": "https://images.racingpost.com/football/teambadges/2068.png",
+        "league": "leagueone"
+      },
+      {
+        "id": "1",
+        "name": "BARCELONA",
+        "img": "https://www.freepnglogos.com/uploads/fc-barcelona-png-logo/fc-barcelona-png-logo-0.png",
+        "league": "laliga"
+      },
+      {
+        "id": "1",
+        "name": "BENFICA",
+        "img": "https://seeklogo.com/images/B/Benfica-logo-791E5C5764-seeklogo.com.png",
+        "league": "primeira"
+      },
+      {
+        "id": "1",
+        "name": "NÁPOLES",
+        "img": "https://cdn.freelogovectors.net/wp-content/uploads/2023/09/ssc-napoli-logo-freelogovectors.net_.png",
+        "league": "seriea"
+      },
+      {
+        "id": "1",
+        "name": "FEYENOORD",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/0/00/Logo_Sportclub_Feyenoord.png",
+        "league": "eredivise"
+
+        } ]
+  },
+
+  "bombo2": {
+    "numero": 2,
+    "equipos": [
+      {
+        "id": "2",
+        "name":"NEWCASTLE",
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Newcastle_United_Logo.svg/1200px-Newcastle_United_Logo.svg.png",
+        "league": "premier"
+      },
+      {
+        "id" : "2",
+        "name": "DORTMUND",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Borussia_Dortmund_logo.svg/800px-Borussia_Dortmund_logo.svg.png",
+        "league": "bundesliga"
+      },
+      {
+        "id" : "2",
+        "name": "REAL MADRID",
+        "img": "https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_96x96.png",
+        "league": "laliga"
+      },
+      {
+        "id" : "2",
+        "name": "DORTMUND",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Borussia_Dortmund_logo.svg/800px-Borussia_Dortmund_logo.svg.png",
+        "league": "bundesliga"
+      },
+      {
+        "id" : "2",
+        "name": "REAL MADRID",
+        "img": "https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_96x96.png",
+        "league": "laliga"
+      },
+      {
+        "id" : "2",
+        "name": "DORTMUND",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Borussia_Dortmund_logo.svg/800px-Borussia_Dortmund_logo.svg.png",
+        "league": "bundesliga"
+      },
+      {
+        "id" : "2",
+        "name": "REAL MADRID",
+        "img": "https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_96x96.png",
+        "league": "laliga"
+      },
+      {
+        "id": "2",
+        "name":"NEWCASTLE",
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Newcastle_United_Logo.svg/1200px-Newcastle_United_Logo.svg.png",
+        "league": "premier"
+      }
+    ]
+  },
+
+  "bombo3": {
+    "numero": 3,
+    "equipos": [
+      {
+        "id": "3",
+        "name": "SHAKHTAR",
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a1/FC_Shakhtar_Donetsk.svg/1200px-FC_Shakhtar_Donetsk.svg.png",
+        "league":"premierucrania"
+      },
+      {
+        "id": "3",
+        "name": "SALZBURGO",
+        "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX3xZo_uwPJ3MTsASSmMzd_9sxFk1sDGhN6TaaBvKmY-mFOT3dReIoR4NxipQBzDnlIyC3XWgCyKBk0TcgYE6HLJFutngvM523pgpe48dUeMyG1oSJD1xB4MuygnC7kCvw-BEHfiRTQehvUahPva5_PY9JMoEt5Ts9aM15XfhNiP1jGnnpQdR7wkgc/s512/FC%20Red%20Bull%20Salzburg%20UEFA.png",
+        "league": "bundesliga-austria"
+      },
+      {
+        "id": "3",
+        "name": "AC MILAN",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Logo_of_AC_Milan.svg/1200px-Logo_of_AC_Milan.svg.png",
+        "league": "seriea"
+      },
+      {
+        "id": "3",
+        "name": "LAZIO",
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/S.S._Lazio_badge.svg/1200px-S.S._Lazio_badge.svg.png",
+        "league": "seriea"
+      },
+      {
+        "id": "3",
+        "name": "ESTRELLA ROJA",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Grb-fk-crvena-zvezda.svg/1200px-Grb-fk-crvena-zvezda.svg.png",
+        "league":"superligaserbia"
+      },
+      {
+        "id": "3",
+        "name": "BRAGA",
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/7/79/S.C._Braga_logo.svg/1200px-S.C._Braga_logo.svg.png",
+        "league":"primeira"
+      },
+      {
+        "id": "3",
+        "name": "PSV",
+        "img": "https://w7.pngwing.com/pngs/138/623/png-transparent-psv-hd-logo.png",
+        "league": "eredivise"
+      },
+      {
+        "id": "3",
+        "name": "COPENHAGUE",
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/1200px-FC_Copenhagen_logo.svg.png",
+        "league": "superligadanesa"
+      }
+    ]
+  },
+
+  "bombo4": {
+    "numero": 4,
+    "equipos": [
+      {
+        "id": "4",
+        "name":"LEN",
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/RC_Lens_logo.svg/1200px-RC_Lens_logo.svg.png",
+        "league": "leagueone"
+      },
+      {
+        "id": "4",
+        "name":"NEWCASTLE",
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Newcastle_United_Logo.svg/1200px-Newcastle_United_Logo.svg.png",
+        "league": "premier"
+      },
+      {
+        "id": "4",
+        "name":"UNIÓN BERLÍN",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/1._FC_Union_Berlin_Logo.svg/1200px-1._FC_Union_Berlin_Logo.svg.png",
+        "league": "bundesliga"
+      },
+      {
+        "id": "4",
+        "name":"REAL SOCIEDAD",
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Real_Sociedad_logo.svg/1200px-Real_Sociedad_logo.svg.png",
+        "league": "laliga"
+      },
+      {
+        "id": "4",
+        "name":"CELTIC",
+        "img": "https://upload.wikimedia.org/wikipedia/pt/3/39/Celtic_FC_logo.png",
+        "league":"scottish"
+      },
+      {
+        "id": "4",
+        "name":"YOUNG BOYS",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/BSC_Young_Boys.svg/1200px-BSC_Young_Boys.svg.png",
+        "league":"superligasuiza"
+      },
+      {
+        "id": "4",
+        "name":"GALATASARAY",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/1/15/Galatasaray_SK.svg",
+        "league":"superligaturca"
+      },
+      {
+        "id": "4",
+        "name":"AMBERES",
+        "img": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/17544.png",
+        "league":"belgianleague"
+      }
+    ]
+  }
+}
+
